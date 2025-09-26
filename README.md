@@ -92,3 +92,13 @@ Este projeto está licenciado sob a **MIT License** – consulte o arquivo [LICE
 
 > “DRYTERN é sobre estudar de forma inteligente, não mais difícil.”
 
+---
+| Arquivo                 | Adicionar ao repo? | Observações                   |
+| ----------------------- | ------------------ | ----------------------------- |
+| `README.md`             | ✅                  | Já pronto                     |
+| `LICENSE`               | ✅                  | Licença MIT pública           |
+| `sitemap.xml`           | ✅                  | Para SEO e Google indexing    |
+| `manifest.json`         | ✅                  | Para modo app / PWA           |
+| `robots.txt`            | ✅                  | Para liberar indexação        |
+| `<link rel="manifest">` | ✅                  | No `<head>` do HTML principal |
+| Google Search Console   | 🔜                 | Use sua URL e sitemap         |
