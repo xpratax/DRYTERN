@@ -1,0 +1,16 @@
+{
+  "name": "DRYTERN",
+  "short_name": "DRYTERN",
+  "description": "Bookmarklets para AVA, Khanware, Nuggets e Apostilas.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#39ff14",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/xpratax/DRYTERN/refs/heads/main/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
