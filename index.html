@@ -72,7 +72,7 @@
 
     /* Seções dinâmicas */
     #bookmarklet-section,
-    #taskitos-section,
+    #nuggets-section,
     #khanware-section,
     #apostilas-section {
       display: none;
@@ -186,7 +186,7 @@
   <!-- Botões -->
   <div class="buttons">
     <button onclick="showBookmarklet()">AVA-Educação Profissional</button>
-    <button onclick="showTaskitos()">Nuggets</button>
+    <button onclick="showNuggets()">Nuggets</button>
     <button onclick="showKhanware()">Khanware</button>
     <button onclick="showApostilas()">Apostilas</button>
   </div>
@@ -206,9 +206,9 @@ javascript:fetch("https://raw.githubusercontent.com/marcos10pc/Educacao-Profissi
     </div>
   </div>
 
-  <!-- Seção Taskitos -->
-  <div id="Nuggets-section">
-    <h2>Como usar o nuggets</h2>
+  <!-- Seção Nuggets -->
+  <div id="nuggets-section">
+    <h2>Como usar o Nuggets</h2>
     <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
       <li>Acesse o site pelo botão abaixo.</li>
       <li>Crie uma conta ou faça login.</li>
@@ -216,8 +216,8 @@ javascript:fetch("https://raw.githubusercontent.com/marcos10pc/Educacao-Profissi
       <li>Marque as tarefas como concluídas.</li>
       <li>Organize seus compromissos!</li>
     </ol>
-    <a href="https://nuggets.biscurim.space/?cmsphacks.xyz">
-      <button class="access-btn">Acessar Taskitos</button>
+    <a href="https://nuggets.biscurim.space/?cmsphacks.xyz" target="_blank">
+      <button class="access-btn">Acessar Nuggets</button>
     </a>
   </div>
 
@@ -253,7 +253,7 @@ javascript:fetch("https://raw.githubusercontent.com/Niximkk/Khanware/refs/heads/
 
   <script>
     function hideAllSections() {
-      document.querySelectorAll('#bookmarklet-section, #taskitos-section, #khanware-section, #apostilas-section')
+      document.querySelectorAll('#bookmarklet-section, #nuggets-section, #khanware-section, #apostilas-section')
         .forEach(sec => sec.style.display = 'none');
     }
 
@@ -262,9 +262,9 @@ javascript:fetch("https://raw.githubusercontent.com/Niximkk/Khanware/refs/heads/
       document.getElementById('bookmarklet-section').style.display = 'flex';
     }
 
-    function showTaskitos() {
+    function showNuggets() {
       hideAllSections();
-      document.getElementById('taskitos-section').style.display = 'flex';
+      document.getElementById('nuggets-section').style.display = 'flex';
     }
 
     function showKhanware() {
@@ -281,7 +281,9 @@ javascript:fetch("https://raw.githubusercontent.com/Niximkk/Khanware/refs/heads/
 </body>
 </html>
 
+
 		
+
 
 
 
