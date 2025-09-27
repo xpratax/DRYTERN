@@ -8,7 +8,7 @@
   "description": "Ferramentas Educacionais e Cheats",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "https://raw.githubusercontent.com/xpratax/DRYTERN/refs/heads/main/favicon.ico",
       "sizes": "64x64 128x128 256x256 512x512",
       "type": "image/x-icon"
     }
