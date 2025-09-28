@@ -1,50 +1,52 @@
-# 🧠 DRYTERN
+# 🧠 DRYTERN - Atualização 28/09/2025
 
-**DRYTERN** é uma central de ferramentas educacionais que reúne scripts e bookmarklets para automatizar e melhorar sua experiência em plataformas como **AVA - Educação Profissional (CMSP)**, **Khanware**, **Nuggets** e acesso rápido às **apostilas online**.
-
-> 📌 Ideal para estudantes de ensino técnico que buscam praticidade, agilidade e automação no ambiente virtual de aprendizagem.
+**DRYTERN** é a central de ferramentas educacionais e cheats que otimiza sua experiência em plataformas como **AVA (CMSP)**, **Khanware**, **Nuggets** e **apostilas online**.
 
 ---
 
-## 🔗 Acesse agora
+## 📅 Novidades desta atualização
 
-🌐 [https://xpratax.github.io/drytern](https://xpratax.github.io/drytern)
-
----
-
-## 🚀 Funcionalidades
-
-- ✅ **Bookmarklet para AVA (Educação Profissional - CMSP)**  
-  Automatize interações, ganhe tempo com respostas rápidas e melhorias de navegação.
-
-- ✅ **Khanware Bookmarklet**  
-  Adiciona recursos extras à plataforma Khanware com um simples clique.
-
-- ⚠️ **Nuggets** *(atualmente fora do ar)*  
-  Script planejado para facilitar o acesso e controle dos módulos Nuggets.
-
-- ✅ **Acesso direto às apostilas online**  
-  Interface limpa com todos os materiais organizados em um só lugar.
+- **🎮 CtrlVex Bookmarklet**: novo script que permite copiar e colar em páginas que bloqueiam essas ações.  
+- **🐉 ASCII Mortal Kombat**: novo visual na página de manutenção com o dragão do Mortal Kombat em neon verde.  
+- **⏳ Página de carregamento/manutenção**: adicionada animação e efeito neon enquanto a página principal está carregando.  
+- **🎨 Melhorias visuais**: ajustes em cores, neon e sombras no layout principal.  
+- **♿ Bookmarklet de Acessibilidade**: menu flutuante para alterar tema, contraste e luminosidade para inclusão de usuários com necessidades visuais.
 
 ---
 
-## 🛠️ Como usar os bookmarklets?
+## 🔗 Acesse o site
 
-1. Copie o código JavaScript fornecido em cada seção do site.
-2. Abra os favoritos do seu navegador.
-3. Crie um novo favorito.
-4. No campo **URL**, cole o código copiado.
-5. Salve.
-6. Acesse a plataforma desejada e clique no bookmarklet.
+🌐 [https://xpratax.github.io/DRYTERN/](https://xpratax.github.io/DRYTERN/)
 
 ---
 
-## 💻 Tecnologias Utilizadas
+## 🚀 Funcionalidades principais
 
-- **HTML5**
-- **CSS3 (Neon Theme + Terminal Style)**
-- **JavaScript Puro**
-- **GitHub Pages** para hospedagem
+- ✅ **AVA Bookmarklet (Educação Profissional - CMSP)**: automatiza interações e respostas.  
+- ✅ **Khanware Bookmarklet**: recursos extras na plataforma.  
+- ✅ **CtrlVex**: habilita copiar e colar mesmo em sites que bloqueiam.  
+- ⚠️ **Nuggets**: ainda em manutenção, instruções de acesso via Instagram.  
+- ✅ **Acesso direto às apostilas online**: interface limpa e organizada.  
+- 🖌️ **ASCII art e visual neon**: página de manutenção estilizada com o símbolo do Mortal Kombat.
+
+---
+
+## 🛠️ Como usar os bookmarklets
+
+1. Copie o código JavaScript fornecido em cada seção do site.  
+2. Abra os favoritos do navegador.  
+3. Crie um novo favorito.  
+4. Cole o código no campo **URL**.  
+5. Salve e clique quando estiver na plataforma desejada.
+
+---
+
+## 💻 Tecnologias utilizadas
+
+- **HTML5 + CSS3 Neon**  
+- **JavaScript Puro**  
+- **GitHub Pages** (hospedagem)  
+- **PWA / Manifest** para instalação como app  
 
 ---
 
@@ -56,76 +58,38 @@
 
 ## 📁 Repositórios relacionados
 
-- [Educacao-Profissional-Cheeto (Bookmarklet AVA)](https://github.com/marcos10pc/Educacao-Profissional-Cheeto)
-- [Khanware Bookmarklet Script](https://github.com/Niximkk/Khanware)
-- [Apostilas CMSP Viewer](https://apostilas-cmsp.vercel.app/)
+- [Educacao-Profissional-Cheeto](https://github.com/marcos10pc/Educacao-Profissional-Cheeto)  
+- [Khanware Bookmarklet](https://github.com/Niximkk/Khanware)  
+- [Apostilas CMSP Viewer](https://apostilas-cmsp.vercel.app/)  
 
 ---
 
 ## 📢 Avisos
 
-- O projeto **não é afiliado oficialmente ao CMSP ou às plataformas mencionadas**.
-- Scripts são fornecidos **para fins educacionais** e de **uso pessoal**.
+- **DRYTERN não é afiliado oficialmente ao CMSP ou plataformas mencionadas.**  
+- Scripts são **apenas para fins educacionais e pessoais**.  
 - Use com responsabilidade.
 
 ---
 
-## 📬 Contribua!
-
-Sinta-se à vontade para abrir issues, sugerir melhorias ou enviar um pull request. Toda ajuda é bem-vinda!
-
----
-
-## 🔒 Licença
-
-Este projeto está licenciado sob a **MIT License** – consulte o arquivo [LICENSE](LICENSE) para detalhes.
-
----
-
-## 👤 Autor
-
-**Xpratax**  
-🔗 [GitHub](https://github.com/xpratax)  
-📫 Contato: *adicione aqui se quiser, como e-mail ou Discord*
-
----
-
-> “DRYTERN é sobre estudar de forma inteligente, não mais difícil.”
-
----
-| Arquivo                 | Adicionar ao repo? | Observações                   |
-| ----------------------- | ------------------ | ----------------------------- |
-| `README.md`             | ✅                  | Já pronto                     |
-| `LICENSE`               | ✅                  | Licença MIT pública           |
-| `sitemap.xml`           | ✅                  | Para SEO e Google indexing    |
-| `manifest.json`         | ✅                  | Para modo app / PWA           |
-| `robots.txt`            | ✅                  | Para liberar indexação        |
-| `<link rel="manifest">` | ✅                  | No `<head>` do HTML principal |
-| Google Search Console   | 🔜                 | Use sua URL e sitemap         |
-
----
 ## ♿ Bookmarklet: Mod Menu de Acessibilidade para DRYTERN
 
 Este bookmarklet adiciona um menu flutuante para alterar rapidamente o tema do site, melhorando a experiência para usuários com necessidades visuais específicas, como **miopia** e **epilepsia**.
 
-### 🔍 Por que isso ajuda?
+### 🔍 Benefícios
 
-- **Miopia**: Facilita a leitura com temas mais claros e alto contraste, reduzindo o esforço visual.
-- **Epilepsia**: Minimiza efeitos visuais agressivos, como brilhos neon e animações rápidas, que podem desencadear crises.
-- **Inclusão**: Permite que cada usuário escolha o tema que melhor se adapta à sua visão, aumentando a acessibilidade e conforto durante o uso do site.
+- **Miopia**: Facilita a leitura com temas mais claros e alto contraste.  
+- **Epilepsia**: Minimiza efeitos visuais agressivos, como brilhos neon e animações rápidas.  
+- **Inclusão**: Cada usuário escolhe o tema que melhor se adapta à sua visão.
 
----
+### 📌 Como usar
 
-### 📌 Como usar o bookmarklet
-
-1. Copie o código abaixo.
-2. Abra seus favoritos no navegador.
-3. Crie um novo favorito.
-4. No campo **URL**, cole o código copiado.
-5. Nomeie o favorito (ex: `DRYTERN Acessibilidade`).
-6. Acesse o site DRYTERN e clique no favorito para ativar o menu.
-
----
+1. Copie o código do bookmarklet de acessibilidade.  
+2. Abra seus favoritos no navegador.  
+3. Crie um novo favorito.  
+4. Cole o código no campo **URL**.  
+5. Nomeie o favorito, ex: `DRYTERN Acessibilidade`.  
+6. Acesse DRYTERN e clique no favorito para ativar o menu.
 
 <details>
 <summary><strong>📋 Código do Bookmarklet (Clique para expandir)</strong></summary>
@@ -165,27 +129,11 @@ javascript:(function(){
     #drytern-accessibility-menu button:hover {
       filter: brightness(1.2);
     }
-    #drytern-accessibility-menu .light {
-      background: #f0f0f0;
-      color: #222;
-    }
-    #drytern-accessibility-menu .dark {
-      background: #121212;
-      color: #eee;
-    }
-    #drytern-accessibility-menu .high-contrast {
-      background: #000;
-      color: #ff0;
-      border: 2px solid #ff0;
-    }
-    #drytern-accessibility-menu .low-brightness {
-      background: #111;
-      color: #ccc;
-    }
-    #drytern-accessibility-menu .reset {
-      background: #555;
-      color: #eee;
-    }
+    #drytern-accessibility-menu .light { background: #f0f0f0; color: #222; }
+    #drytern-accessibility-menu .dark { background: #121212; color: #eee; }
+    #drytern-accessibility-menu .high-contrast { background: #000; color: #ff0; border: 2px solid #ff0; }
+    #drytern-accessibility-menu .low-brightness { background: #111; color: #ccc; }
+    #drytern-accessibility-menu .reset { background: #555; color: #eee; }
     #accessibility-toggle {
       position: fixed;
       bottom: 20px;
@@ -204,82 +152,33 @@ javascript:(function(){
   `;
   document.head.appendChild(style);
 
-  // Botão para abrir/fechar o menu
   const toggle = document.createElement('button');
   toggle.id = 'accessibility-toggle';
   toggle.textContent = '♿ Acessibilidade';
   document.body.appendChild(toggle);
 
-  // Menu de opções
   const menu = document.createElement('div');
   menu.id = 'drytern-accessibility-menu';
   menu.style.display = 'none';
   menu.innerHTML = `
-    <button class="light" title="Tema Claro - Facilita leitura para miopia">🌞 Tema Claro</button>
-    <button class="dark" title="Tema Escuro - Conforto para ambientes escuros">🌑 Tema Escuro</button>
-    <button class="high-contrast" title="Alto Contraste - Destaca elementos para baixa visão">⚡ Alto Contraste</button>
-    <button class="low-brightness" title="Baixa Luminosidade - Reduz brilhos e flashes para epilepsia">🌙 Baixa Luminosidade</button>
+    <button class="light" title="Tema Claro">🌞 Tema Claro</button>
+    <button class="dark" title="Tema Escuro">🌑 Tema Escuro</button>
+    <button class="high-contrast" title="Alto Contraste">⚡ Alto Contraste</button>
+    <button class="low-brightness" title="Baixa Luminosidade">🌙 Baixa Luminosidade</button>
     <button class="reset" title="Voltar ao tema original">🔄 Resetar Tema</button>
   `;
   document.body.appendChild(menu);
 
-  toggle.onclick = () => {
-    menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
-  };
+  toggle.onclick = () => { menu.style.display = (menu.style.display === 'none') ? 'block' : 'none'; };
 
-  // Funções para cada tema
-  menu.querySelector('.light').onclick = () => {
-    document.body.style.background = '#f9f9f9';
-    document.body.style.color = '#222';
-    clearCustomStyles();
-  };
-  menu.querySelector('.dark').onclick = () => {
-    document.body.style.background = '#121212';
-    document.body.style.color = '#eee';
-    clearCustomStyles();
-  };
-  menu.querySelector('.high-contrast').onclick = () => {
-    document.body.style.background = '#000';
-    document.body.style.color = '#ff0';
-    clearCustomStyles();
-    // Aplica bordas amarelas e destaque para todos os elementos
-    document.querySelectorAll('*').forEach(el => {
-      el.style.borderColor = '#ff0';
-      el.style.borderStyle = 'solid';
-      el.style.borderWidth = '1px';
-      el.style.backgroundColor = 'transparent';
-      el.style.color = '#ff0';
-    });
-  };
-  menu.querySelector('.low-brightness').onclick = () => {
-    document.body.style.background = '#111';
-    document.body.style.color = '#ccc';
-    clearCustomStyles();
-    // Remove brilhos e efeitos neon (exemplo simples)
-    document.querySelectorAll('*').forEach(el => {
-      el.style.textShadow = 'none';
-      el.style.boxShadow = 'none';
-      el.style.filter = 'none';
-      el.style.backgroundColor = 'transparent';
-    });
-  };
-  menu.querySelector('.reset').onclick = () => {
-    location.reload();
-  };
+  menu.querySelector('.light').onclick = () => { document.body.style.background = '#f9f9f9'; document.body.style.color = '#222'; clearCustomStyles(); };
+  menu.querySelector('.dark').onclick = () => { document.body.style.background = '#121212'; document.body.style.color = '#eee'; clearCustomStyles(); };
+  menu.querySelector('.high-contrast').onclick = () => { document.body.style.background = '#000'; document.body.style.color = '#ff0'; clearCustomStyles(); document.querySelectorAll('*').forEach(el => { el.style.borderColor = '#ff0'; el.style.borderStyle = 'solid'; el.style.borderWidth = '1px'; el.style.backgroundColor = 'transparent'; el.style.color = '#ff0'; }); };
+  menu.querySelector('.low-brightness').onclick = () => { document.body.style.background = '#111'; document.body.style.color = '#ccc'; clearCustomStyles(); document.querySelectorAll('*').forEach(el => { el.style.textShadow = 'none'; el.style.boxShadow = 'none'; el.style.filter = 'none'; el.style.backgroundColor = 'transparent'; }); };
+  menu.querySelector('.reset').onclick = () => { location.reload(); };
 
-  // Remove estilos extras para reset
   function clearCustomStyles() {
-    document.querySelectorAll('*').forEach(el => {
-      el.style.border = '';
-      el.style.borderColor = '';
-      el.style.borderStyle = '';
-      el.style.borderWidth = '';
-      el.style.backgroundColor = '';
-      el.style.color = '';
-      el.style.textShadow = '';
-      el.style.boxShadow = '';
-      el.style.filter = '';
-    });
+    document.querySelectorAll('*').forEach(el => { el.style.border = ''; el.style.borderColor = ''; el.style.borderStyle = ''; el.style.borderWidth = ''; el.style.backgroundColor = ''; el.style.color = ''; el.style.textShadow = ''; el.style.boxShadow = ''; el.style.filter = ''; });
   }
 })();
 
