@@ -1,310 +1,280 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!-- Google Search Console Verification -->
-  <meta name="google-site-verification" content="Ghgsfu_8WMsVmyMgY-4GwYXeD6XoIJrvyXYcHq0ctE8">
-  <!-- Título e descrição para SEO -->
-  <title>DRYTERN - Ferramentas Educacionais e Cheats</title>
-  <meta name="description" content="DRYTERN: Ferramentas como bookmarklets, nuggets, khanware e apostilas. Explore recursos para AVA, CMSP e muito mais.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="Ghgsfu_8WMsVmyMgY-4GwYXeD6XoIJrvyXYcHq0ctE8">
+    
+    <title>DRYTERN - Ferramentas Educacionais e Cheats</title>
+    <meta name="description" content="DRYTERN: Ferramentas como bookmarklets, nuggets, khanware e apostilas. Explore recursos para AVA, CMSP e muito mais.">
+    <meta name="keywords" content="drytern, nuggets, khanware, bookmarklet, avaprofissional, cmsprofissional, apostilas, cheats, educação">
+    <meta name="robots" content="index, follow">
+    
+    <!-- PWA e favicon -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#39ff14">
+    <link rel="icon" href="https://raw.githubusercontent.com/xpratax/DRYTERN/refs/heads/main/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="DRYTERN - Ferramentas Educacionais e Cheats">
+    <meta property="og:description" content="Ferramentas como Nuggets, Khanware e bookmarklets para otimizar seu aprendizado e navegação.">
+    <meta property="og:image" content="https://i.postimg.cc/tYJvhCrJ/images.jpg">
+    <meta property="og:url" content="https://xpratax.github.io/DRYTERN/">
+    <meta property="og:type" content="website">
 
-  <!-- Palavras-chave -->
-  <meta name="keywords" content="drytern, nuggets, khanware, bookmarklet, avaprofissional, cmsprofissional, apostilas, cheats, educação">
-  
-  <!-- app-PWA -->
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#39ff14">
-<link rel="icon" href="https://raw.githubusercontent.com/xpratax/DRYTERN/refs/heads/main/favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  
-  <!-- Indexação por buscadores -->
-  <meta name="robots" content="index, follow">
-  <!-- favicon-externo -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "DRYTERN - Ferramentas Educacionais e Cheats",
-  "url": "https://xpratax.github.io/DRYTERN/",
-  "image": "https://raw.githubusercontent.com/xpratax/DRYTERN/main/logo.png",
-  "description": "Ferramentas como Nuggets, Khanware e bookmarklets para otimizar seu aprendizado e navegação."
-}
-</script>
+        body {
+            background-color: #000;
+            color: #39ff14;
+            font-family: 'Courier New', monospace;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+        }
 
-  <!-- Favicon -->
-  <link rel="icon" href="https://raw.githubusercontent.com/xpratax/DRYTERN/refs/heads/main/favicon.ico" type="image/x-icon">
+        #ascii-area {
+            width: 100%;
+            max-width: 800px;
+            min-height: 150px;
+            font-size: 14px;
+            white-space: pre;
+            color: #39ff14;
+            text-shadow: 0 0 10px #39ff14;
+            margin-bottom: 20px;
+            border: 1px solid #39ff14;
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.3s ease-in-out;
+        }
 
-  <!-- Open Graph (para quando alguém compartilhar o link) -->
-  <meta property="og:title" content="DRYTERN - Ferramentas Educacionais e Cheats">
-  <meta property="og:description" content="Ferramentas como Nuggets, Khanware e bookmarklets para otimizar seu aprendizado e navegação.">
-  <meta property="og:image" content="https://i.postimg.cc/tYJvhCrJ/images.jpg">
-  <meta property="og:url" content="https://xpratax.github.io/DRYTERN/">
-  <meta property="og:type" content="website">
-</head>
-<style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            width: 90%;
+            max-width: 900px;
+            margin-bottom: 30px;
+        }
 
-    body {
-      background-color: #000;
-      color: #39ff14; /* Neon verde */
-      font-family: 'Courier New', monospace;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      transition: all 0.3s ease-in-out;
-    }
+        button {
+            background: transparent;
+            color: #39ff14;
+            border: 2px solid #39ff14;
+            padding: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-shadow: 0 0 5px #39ff14;
+        }
 
-    /* Área ASCII */
-    #ascii-area {
-      width: 100%;
-      max-width: 800px;
-      min-height: 150px;
-      font-size: 14px;
-      white-space: pre;
-      color: #39ff14;
-      text-shadow: 0 0 10px #39ff14;
-      margin-bottom: 20px;
-      border: 1px solid #39ff14;
-      border-radius: 10px;
-      padding: 10px;
-      transition: all 0.3s ease-in-out;
-    }
+        button:hover {
+            background-color: #39ff14;
+            color: #000;
+            box-shadow: 0 0 15px #39ff14;
+        }
 
-    /* Botões */
-    .buttons {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
-      width: 90%;
-      max-width: 900px;
-      margin-bottom: 30px;
-    }
+        .section {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid red;
+            border-radius: 10px;
+            max-width: 800px;
+            background: rgba(20, 0, 0, 0.9);
+            color: #ff0000;
+            text-shadow: 0 0 8px #ff0000;
+            animation: fadeIn 0.5s ease-in-out;
+        }
 
-    button {
-      background: transparent;
-      color: #39ff14;
-      border: 2px solid #39ff14;
-      padding: 10px;
-      font-size: 1rem;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s;
-      text-shadow: 0 0 5px #39ff14;
-    }
+        .bookmarklet-code {
+            background: #000;
+            padding: 10px;
+            border: 1px solid #ff0000;
+            border-radius: 8px;
+            white-space: pre-wrap;
+            font-size: 14px;
+            margin: 10px 0;
+            width: 100%;
+            overflow-x: auto;
+            color: #ff0000;
+        }
 
-    button:hover {
-      background-color: #39ff14;
-      color: #000;
-      box-shadow: 0 0 15px #39ff14;
-    }
+        .access-btn {
+            background: transparent;
+            color: #ff0000;
+            border: 2px solid #ff0000;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            text-shadow: 0 0 5px #ff0000;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
 
-    /* Seções dinâmicas */
-    #bookmarklet-section,
-    #nuggets-section,
-    #khanware-section,
-    #apostilas-section {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 20px;
-      padding: 15px;
-      border: 2px solid red;
-      border-radius: 10px;
-      max-width: 800px;
-      background: rgba(20, 0, 0, 0.9);
-      color: #ff0000;
-      text-shadow: 0 0 8px #ff0000;
-      animation: fadeIn 0.5s ease-in-out;
-    }
+        .access-btn:hover {
+            background: #ff0000;
+            color: #000;
+            box-shadow: 0 0 15px #ff0000;
+        }
 
-    /* Área de código do bookmarklet */
-    .bookmarklet-code {
-      background: #000;
-      padding: 10px;
-      border: 1px solid #ff0000;
-      border-radius: 8px;
-      white-space: pre-wrap;
-      font-size: 14px;
-      margin: 10px 0;
-      width: 100%;
-      overflow-x: auto;
-      color: #ff0000;
-    }
+        footer {
+            position: fixed;
+            bottom: 10px;
+            text-align: center;
+            color: #39ff14;
+            font-size: 0.8rem;
+            text-shadow: 0 0 8px #39ff14;
+        }
 
-    /* Botão "Acessar" */
-    .access-btn {
-      background: transparent;
-      color: #ff0000;
-      border: 2px solid #ff0000;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      text-shadow: 0 0 5px #ff0000;
-      margin-top: 15px;
-      transition: 0.3s;
-    }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-    .access-btn:hover {
-      background: #ff0000;
-      color: #000;
-      box-shadow: 0 0 15px #ff0000;
-    }
-
-    footer {
-      position: fixed;
-      bottom: 10px;
-      text-align: center;
-      color: #39ff14;
-      font-size: 0.8rem;
-      text-shadow: 0 0 8px #39ff14;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .logo {
-      max-width: 200px;
-      margin-bottom: 20px;
-    }
-  </style>
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- Logo -->
-  <a href="https://postimg.cc/tYJvhCrJ" target="_blank">
-    <img src="https://i.postimg.cc/tYJvhCrJ/images.jpg" alt="Logo da empresa" class="logo">
-  </a>
-
-  <!-- ASCII -->
-  <div id="ascii-area">
-    <span>    ⠀⡀⠰⣾⣿⣶⣶⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⣠⣴⣶⣶⣿⠁⠀⠙⠿⣿⣿⣿⡟⠶⠀⠀⠀⠀⠀⢲⣄⠀⠀⠀⠀⠀
-⠀⢀⣶⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⢻⣿⣧⠀⠀⠀⠀⠀⢀⣾⣿⣿⣦⡀⠀⠀
-⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣦⣄⡀⠀⢸⣿⣿⡄⠀⠀⢀⣠⣿⣿⣿⣿⣿⣿⣦⠀
-⣿⡟⠉⠀⠀⠈⢻⣿⣿⠿⢿⣿⣿⣷⣾⣿⣿⣷⣶⣾⣿⣿⣿⣿⣿⡿⢿⣿⣿⣇
-⢻⠁⠀⠀⠀⠀⠀⠉⣠⣶⡟⠛⣿⣿⣿⣿⣿⣿⣿⠟⠛⣿⣿⣿⠋⠀⣾⣟⢻⣿
-⠀⠀⠀⠀⠀⠀⠀⠈⠻⠙⢇⣼⣿⣿⣿⣿⣿⣿⣿⡆⠀⠟⠻⠟⠀⠀⣾⣿⠈⡟
-⠀⠀⠀⠀⠀⣀⣤⣴⣤⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀⢸⣿⡿⠇⠀
-⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⢀⣀⡤⠊⠀⠀⠀
-⠀⠀⠀⠘⠿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠛⠛⠻⠿⠿⢿⣿⣿⣿⠛⠋⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠿⠿⠿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠀⠀⠀⠀⠀⠀⠀
-    </span>
-  </div>
-
-  <!-- Botões -->
-  <div class="buttons">
-    <button onclick="showBookmarklet()">AVA-Educação Profissional</button>
-    <button onclick="showNuggets()">Nuggets</button>
-    <button onclick="showKhanware()">Khanware</button>
-    <button onclick="showApostilas()">Apostilas</button>
-  </div>
-
-  <!-- Seção VA Educação Profissional -->
-  <div id="bookmarklet-section">
-    <h2>Instalação do Bookmarklet - VA Educação Profissional</h2>
-    <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
-      <li>Copie o código abaixo.</li>
-      <li>Abra os favoritos do seu navegador.</li>
-      <li>Crie um novo favorito.</li>
-      <li>No campo <strong>URL</strong>, cole o código copiado.</li>
-      <li>Salve e clique nele na página desejada.</li>
-    </ol>
-    <div class="bookmarklet-code">
-javascript:fetch("https://raw.githubusercontent.com/marcos10pc/Educacao-Profissional-Cheeto/refs/heads/main/script.js").then(get_rekt_bozo=>get_rekt_bozo.text()).then(eval);
-    </div>
-  </div>
-
-  <!-- Seção Nuggets -->
-  <div id="nuggets-section">
-    <h2>Como usar o Nuggets</h2>
-    <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
-      <li>acesse abaixo</li>
-      <li>no site acesse o instagram</li>
-      <li>siga @vm_dantas</li>
-      <li>volte para o nuggets</li>
-      <li>espere carregar</li>
-      <li>e acesse o botão</li>
-    </ol>
-    <a href="https://xpratax.github.io/nuggets/">
-      <button class="access-btn">acessar</button>
+    <a href="https://postimg.cc/tYJvhCrJ" target="_blank">
+        <img src="https://i.postimg.cc/tYJvhCrJ/images.jpg" alt="Logo da empresa" class="logo">
     </a>
-  </div>
 
-  <!-- Seção Khanware -->
-  <div id="khanware-section">
-    <h2>Instalação do Bookmarklet - Khanware</h2>
-    <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
-      <li>Copie o código abaixo.</li>
-      <li>Abra os favoritos do seu navegador.</li>
-      <li>Crie um novo favorito.</li>
-      <li>No campo <strong>URL</strong>, cole o código copiado.</li>
-      <li>Salve e clique nele na página desejada.</li>
-    </ol>
-    <div class="bookmarklet-code">
-javascript:fetch("https://raw.githubusercontent.com/Niximkk/Khanware/refs/heads/main/Khanware.js").then(t=>t.text()).then(eval);
+    <div id="ascii-area">
+        <span>
+            ⠀⠀⠀⠀⠀⣤⣴⣶⠾⡿⠿⠿⠿⠷⣶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⣠⣴⡿⣿⡛⠹⣇⣀⠀⡀⠀⠀⠀⠀⠀⠉⠛⢿⣦⣄⠀⠀⠀⠀⠀
+            ⠀⠀⠀⣠⣾⠟⣁⣤⣬⣽⣿⣿⣿⣿⣿⣿⣿⣷⣤⣄⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀
+            ⠀⠀⣴⣿⢁⣾⣿⣿⣿⣿⣿⣿⣿⣿⣯⣭⣝⣿⣿⣟⠃⠀⠀⠀⠀⠈⢿⣦⠀⠀
+            ⠀⣼⡟⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⠻⢿⣿⣷⣶⣤⣀⣄⠀⠀⢻⣧⠀
+            ⢰⣿⠀⣿⣿⣿⣿⣿⣿⣧⢿⣿⣿⠿⠟⠛⠶⣄⡀⠙⠿⣾⣿⣿⣿⠁⠀⠀⣿⡆
+            ⣾⡇⠀⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠈⠙⣶⣤⣀⣟⣯⡋⠀⠀⠀⢸⣷
+            ⣿⡇⢀⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⠀⠀⠀⣀⡀⠉⠉⠉⠈⣧⠀⠀⠠⣸⣿
+            ⢿⡇⠾⠟⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣀⠹⣦⣀⡠⢻⡿
+            ⠸⣿⠀⠀⠈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠙⠒⠒⣿⠇
+            ⠀⢻⣧⠀⠀⢰⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⣼⡟⠀
+            ⠀⠀⠻⣷⡐⠴⠏⠀⠿⠛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⣾⠟⠀⠀
+            ⠀⠀⠀⠙⢿⣦⣄⣀⠁⠀⠀⢀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠀⠀⠀⠀⠀
+            ⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠻⠿⢿⣿⣿⣿⣿⡿⠿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀
+        </span>
     </div>
-  </div>
 
-  <!-- Seção Apostilas -->
-  <div id="apostilas-section">
-    <h2>Como acessar as Apostilas</h2>
-    <p style="max-width: 600px; margin: 15px auto;">
-      Acesse o site abaixo para visualizar todas as apostilas disponíveis:
-    </p>
-    <a href="https://apostilas-cmsp.vercel.app/" target="_blank">
-      <button class="access-btn">Acessar Apostilas</button>
-    </a>
-  </div>
+    <div class="buttons">
+        <button onclick="showSection('bookmarklet-section')">AVA-Educação Profissional</button>
+        <button onclick="showSection('nuggets-section')">Nuggets</button>
+        <button onclick="showSection('khanware-section')">Khanware</button>
+        <button onclick="showSection('apostilas-section')">Apostilas</button>
+        <button onclick="showSection('CtrlVex-section')">CtrlVex</button>
+    </div>
 
-  <footer>
-    © 2025 DRYTERN - Todos os direitos reservados
-  </footer>
+    <!-- Seções -->
+    <div id="bookmarklet-section" class="section">
+        <h2>Instalação do Bookmarklet - AVA-Educação-profissional</h2>
+        <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
+            <li>Copie o código abaixo.</li>
+            <li>Abra os favoritos do seu navegador.</li>
+            <li>Crie um novo favorito.</li>
+            <li>No campo <strong>URL</strong>, cole o código copiado.</li>
+            <li>Salve e clique nele na página desejada.</li>
+        </ol>
+        <div class="bookmarklet-code">
+            javascript:fetch("https://raw.githubusercontent.com/marcos10pc/Educacao-Profissional-Cheeto/refs/heads/main/script.js").then(get_rekt_bozo=>get_rekt_bozo.text()).then(eval);
+        </div>
+    </div>
 
-  <script>
-    function hideAllSections() {
-      document.querySelectorAll('#bookmarklet-section, #nuggets-section, #khanware-section, #apostilas-section')
-        .forEach(sec => sec.style.display = 'none');
-    }
+    <div id="nuggets-section" class="section">
+        <h2>Como usar o Nuggets</h2>
+        <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
+            <li>Acesse abaixo</li>
+            <li>No site acesse o Instagram</li>
+            <li>Siga @vm_dantas</li>
+            <li>Volte para o Nuggets</li>
+            <li>Espere carregar</li>
+            <li>E acesse o botão</li>
+        </ol>
+        <a href="https://xpratax.github.io/nuggets/">
+            <button class="access-btn">Acessar</button>
+        </a>
+    </div>
 
-    function showBookmarklet() {
-      hideAllSections();
-      document.getElementById('bookmarklet-section').style.display = 'flex';
-    }
+    <div id="khanware-section" class="section">
+        <h2>Instalação do Bookmarklet - Khanware</h2>
+        <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
+            <li>Copie o código abaixo.</li>
+            <li>Abra os favoritos do seu navegador.</li>
+            <li>Crie um novo favorito.</li>
+            <li>No campo <strong>URL</strong>, cole o código copiado.</li>
+            <li>Salve e clique nele na página desejada.</li>
+        </ol>
+        <div class="bookmarklet-code">
+            javascript:fetch("https://raw.githubusercontent.com/Niximkk/Khanware/refs/heads/main/Khanware.js").then(t=>t.text()).then(eval);
+        </div>
+    </div>
 
-    function showNuggets() {
-      hideAllSections();
-      document.getElementById('nuggets-section').style.display = 'flex';
-    }
+    <div id="apostilas-section" class="section">
+        <h2>Como acessar as Apostilas</h2>
+        <p style="max-width: 600px; margin: 15px auto;">
+            Acesse o site abaixo para visualizar todas as apostilas disponíveis:
+        </p>
+        <a href="https://apostilas-cmsp.vercel.app/" target="_blank">
+            <button class="access-btn">Acessar Apostilas</button>
+        </a>
+    </div>
 
-    function showKhanware() {
-      hideAllSections();
-      document.getElementById('khanware-section').style.display = 'flex';
-    }
+    <div id="CtrlVex-section" class="section">
+        <h2>Instalação do Bookmarklet CtrlVex</h2>
+        <ol style="text-align: left; max-width: 600px; margin: 15px auto;">
+            <li>Copie o código abaixo.</li>
+            <li>Abra os favoritos do seu navegador.</li>
+            <li>Crie um novo favorito.</li>
+            <li>No campo <strong>URL</strong>, cole o código copiado.</li>
+            <li>Salve e clique nele na página desejada.</li>
+        </ol>
+        <div class="bookmarklet-code">
+            javascript:(function () {
+                const forceEnableCopyPaste = (e) => {
+                    e.stopImmediatePropagation();
+                    return true;
+                };
+                ['paste', 'copy'].forEach(event => {
+                    document.addEventListener(event, forceEnableCopyPaste, true);
+                });
+            })();
+        </div>
+    </div>
 
-    function showApostilas() {
-      hideAllSections();
-      document.getElementById('apostilas-section').style.display = 'flex';
-    }
-  </script>
+    <footer>
+        © 2025 DRYTERN - Todos os direitos reservados
+    </footer>
 
+    <script>
+        function hideAllSections() {
+            document.querySelectorAll('.section').forEach(sec => sec.style.display = 'none');
+        }
+
+        function showSection(id) {
+            hideAllSections();
+            document.getElementById(id).style.display = 'flex';
+        }
+    </script>
 </body>
 </html>
-
-
-
-
-
-
