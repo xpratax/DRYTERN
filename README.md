@@ -4,8 +4,8 @@
 
 ---
 ## 📅 EVENTOS
-### 1° de outubro
-#### dia internacinal da musica
+### 2 de outubro
+#### dia internacinal do café
 ---
 ## 📅 Novidades desta atualização
 
