@@ -1,6 +1,7 @@
-# 🧠 DRYTERN - Atualização 28/09/2025
+# 🧠 DRYTERN - Atualização 14/10/2025
 
-**DRYTERN** é a central de ferramentas educacionais e cheats que otimiza sua experiência em plataformas como **AVA (CMSP)**, **Khanware**, **Nuggets** e **apostilas online**.
+**DRYTERN** é a central de ferramentas educacionais e cheats que otimiza sua experiência em plataformas como **AVA (CMSP)**, **Khanware**, **Nuggets**, **apostilas online** E AGORA TEMOS TAMBEM O FAMOSO SCRIPT
+**LUNAR**
 
 ---
 ## 📅 EVENTOS
