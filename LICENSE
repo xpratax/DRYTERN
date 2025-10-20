@@ -1,21 +1,65 @@
-MIT License
+© 2025 Xpratax
 
-Copyright (c) 2025 Xpratax
+1. Grant of Permission (classic MIT text)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following condition: the above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Warranty Disclaimer (classic MIT text)
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+3. Non-Endorsement and User Responsibility (additional)
+
+The authors and copyright holders do not endorse, encourage, or facilitate any illegal activities, including but not limited to software piracy, circumvention of government or institutional platforms, fraud, privacy invasion, or any unlawful acts.
+
+Use of the Software is at the user’s own risk. Users are responsible for ensuring that their use of the Software complies with all applicable laws, regulations, and institutional policies.
+
+4. Prohibited Uses and Recommended Conduct (advisory — not automatically changing MIT permissions)
+
+It is strongly recommended that recipients of the Software do not do the following without express written permission from the author:
+
+distribute the Software with the primary intent to facilitate piracy, unauthorized access, or circumvention of security controls on government or institutional systems;
+
+supply the Software as a tool whose primary purpose is to circumvent technical protection measures;
+
+engage in reverse engineering aimed at circumventing license, security, or legal protections (unless required by mandatory law).
+
+Important: These are advisory conduct restrictions expressing the author’s intent. To legally forbid copying, modification, or redistribution, the project must not be released under the MIT License — a proprietary licensing approach or All Rights Reserved statement is required. Consult legal counsel if you wish to enforce such prohibitions.
+
+5. Reverse Engineering, Metadata, and Responsible Disclosure
+
+Reverse engineering, disassembly, or decompilation of the Software with the purpose of removing copyright notices or bypassing technical protection is strongly discouraged and may violate local and international laws.
+
+If critical vulnerabilities are discovered, users are encouraged to follow responsible disclosure: notify the author with sufficient technical detail and provide a reasonable timeframe for remediation before public disclosure.
+
+6. Export Controls and Compliance
+
+Users are responsible for compliance with any applicable export control laws, sanctions, and trade restrictions. The author disclaims any liability arising from violations related to export or distribution.
+
+7. Patents, Trademarks and Third-Party Rights
+
+This license does not grant rights to any patents, trademarks, or other third-party rights that may be required to use the Software. Users must obtain any necessary licenses from third parties.
+
+8. Indemnification
+
+To the fullest extent permitted by law, users agree to indemnify, defend and hold harmless the authors and copyright holders from any claims, liabilities, losses, damages, and expenses (including reasonable attorneys’ fees) arising from improper use of the Software, breach of these notices, or violation of applicable law.
+
+9. Termination
+
+This license and the rights granted hereunder terminate automatically upon any material breach by the licensee. Upon termination, the licensee must cease all use of the Software and, where applicable, destroy copies.
+
+10. Severability and Entire Agreement
+
+If any provision of this license is held invalid or unenforceable, such provision shall be interpreted to the maximum extent permissible and the remainder shall remain in full force and effect.
+
+11. Governing Law and Jurisdiction
+
+This document shall be governed by and construed in accordance with the laws of Brazil (or specify preferred jurisdiction). Any disputes arising hereunder shall be subject to the exclusive jurisdiction of the competent courts in the chosen forum (specify city/county if desired).
+
+12. Author Contact
+
+Author: Xpratax
+
+Year: 2025
+
+Contact for permissions and requests: (viniciusdantasg16@gmail.com)
