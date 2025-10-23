@@ -408,8 +408,56 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 
+    <!-- BOTÃO DE COMPARTILHAR -->
+<button id="shareBtn" 
+style="
+  background:linear-gradient(90deg,#00ffcc,#00ffaa);
+  color:#001a12;
+  border:none;
+  border-radius:10px;
+  padding:10px 16px;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  box-shadow:0 0 10px rgba(0,255,200,0.4);
+  transition:transform .1s;
+"
+onmouseover="this.style.transform='scale(1.05)'"
+onmouseout="this.style.transform='scale(1)'">
+🔗 Compartilhar este site
+</button>
+
+<script>
+  // Função de compartilhamento
+  document.getElementById('shareBtn').addEventListener('click', async () => {
+    const shareUrl = window.location.href;
+    const shareTitle = document.title || "Confira este site";
+    const shareText = "Dê uma olhada neste site incrível!";
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: shareTitle,
+          text: shareText,
+          url: shareUrl
+        });
+      } catch (err) {
+        console.warn("Usuário cancelou ou houve erro:", err);
+      }
+    } else {
+      try {
+        await navigator.clipboard.writeText(shareUrl);
+        alert("✅ Link copiado para a área de transferência!");
+      } catch {
+        prompt("Copie o link abaixo:", shareUrl);
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
+
 
 
 
