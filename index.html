@@ -465,9 +465,75 @@ onmouseout="this.style.transform='scale(1)'">
     <h2> live do dev</h2>
 <div id="twitch-container"></div>
 <script src="tv.js"></script>
+    <!-- SEÇÃO DE COMPRAS -->
+<div id="loja-section" class="section">
+    <h2>🛍️ Loja DRYTERN</h2>
+    <p style="max-width:600px; margin:15px auto;">
+        Escolha um tipo de site e finalize seu pedido diretamente pelo nosso servidor do Discord.
+    </p>
+
+    <div style="display:grid;gap:15px;max-width:600px;margin:auto;">
+        <!-- Produto 1 -->
+        <div style="border:1px solid #39ff14;padding:15px;border-radius:10px;text-align:left;">
+            <h3 style="color:#39ff14;">🌐 Site Básico</h3>
+            <p>Ideal para quem precisa de um site simples e rápido.</p>
+            <p><strong>Preço:</strong> R$80</p>
+            <button class="access-btn" onclick="comprar('Site Básico', 80)">Comprar</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div style="border:1px solid #39ff14;padding:15px;border-radius:10px;text-align:left;">
+            <h3 style="color:#39ff14;">🚀 Site Avançado Personalizado</h3>
+            <p>Design exclusivo, funções avançadas e otimização completa.</p>
+            <p><strong>Preço:</strong> R$1500</p>
+            <button class="access-btn" onclick="comprar('Site Avançado Personalizado', 1500)">Comprar</button>
+        </div>
+    </div>
+</div>
+
+<!-- BOTÃO FIXO DO CARRINHO -->
+<button id="cartButton" onclick="showSection('loja-section')">🛒</button>
+
+<style>
+#cartButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #39ff14;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #39ff14;
+  transition: transform 0.2s;
+  z-index: 10000;
+}
+#cartButton:hover {
+  transform: scale(1.1);
+}
+</style>
+
+<script>
+function comprar(produto, preco) {
+    const nome = prompt("Digite seu nome para confirmar o pedido:");
+    if (!nome) return alert("❌ Compra cancelada.");
+    
+    const mensagem = encodeURIComponent(
+        `🛒 **Novo Pedido DRYTERN**%0A%0A👤 Cliente: ${nome}%0A💻 Produto: ${produto}%0A💰 Valor: R$${preco}%0A%0AEntre em contato para finalizar o pagamento.`
+    );
+    
+    const linkDiscord = `https://discord.com/invite/GJV59fFg?message=${mensagem}`;
+    window.open(linkDiscord, "_blank");
+}
+</script>
 
 </body>
 </html>
+
 
 
 
