@@ -566,9 +566,130 @@ function comprar(produto, preco) {
     <a href="politica.html" style="color:#007bff; text-decoration:none;">Política de Privacidade</a>
   </p>
 </footer>
+    <!-- BOTÃO FLUTUANTE PARA REPRODUZIR O REEL -->
+<button id="openInstaBtn" style="
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  z-index:10050;
+  background:#e1306c;
+  color:#fff;
+  border:none;
+  padding:12px 16px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 6px 20px rgba(0,0,0,.25);
+">▶ Reproduzir Reel</button>
+
+<!-- MODAL -->
+<div id="instaModal" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background: rgba(0,0,0,0.75);
+  z-index:10040;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+">
+  <div id="instaModalContent" style="
+    width:100%;
+    max-width:640px;
+    background: #000;
+    border-radius:12px;
+    padding:12px;
+    box-shadow:0 12px 40px rgba(0,0,0,.5);
+    position:relative;
+  ">
+    <button id="closeInsta" style="
+      position:absolute;
+      top:8px;
+      right:8px;
+      background:transparent;
+      color:#fff;
+      border:2px solid rgba(255,255,255,0.2);
+      padding:6px 10px;
+      border-radius:8px;
+      cursor:pointer;
+    ">Fechar ✕</button>
+
+    <!-- Container onde o embed será injetado -->
+    <div id="instaEmbedContainer" style="display:flex; justify-content:center; align-items:center;"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const embedHTML = `
+  <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DQxMLjukZkd/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%;"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DQxMLjukZkd/?utm_source=ig_embed&amp;utm_campaign=loading" target="_blank" style="text-decoration:none">Ver no Instagram</a></div></blockquote>`;
+
+  const openBtn = document.getElementById('openInstaBtn');
+  const modal = document.getElementById('instaModal');
+  const closeBtn = document.getElementById('closeInsta');
+  const container = document.getElementById('instaEmbedContainer');
+
+  async function loadInstagramScript() {
+    // Se já existe, não recarrega
+    if (window.instgrm) return;
+    return new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = "https://www.instagram.com/embed.js";
+      s.async = true;
+      s.onload = () => {
+        // aguardar um curto tempo para a lib inicializar
+        setTimeout(resolve, 300);
+      };
+      s.onerror = reject;
+      document.body.appendChild(s);
+    });
+  }
+
+  async function injectAndProcess() {
+    // evita reinjetar múltiplas vezes
+    if (!container.innerHTML.trim()) {
+      container.innerHTML = embedHTML;
+    }
+    try {
+      await loadInstagramScript();
+      // processa os embeds (se a API estiver disponível)
+      if (window.instgrm && window.instgrm.Embeds && typeof window.instgrm.Embeds.process === 'function') {
+        window.instgrm.Embeds.process();
+      } else if (window.instgrm && typeof window.instgrm.process === 'function') {
+        window.instgrm.process();
+      }
+    } catch (e) {
+      console.warn('Erro ao carregar o script do Instagram:', e);
+    }
+  }
+
+  openBtn.addEventListener('click', async () => {
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // evita scroll por baixo do modal
+    await injectAndProcess();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+    // opcional: limpar o container para parar o vídeo
+    container.innerHTML = '';
+  });
+
+  // fecha ao clicar fora do conteúdo
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeBtn.click();
+    }
+  });
+
+})();
+</script>
+
 
 </body>
 </html>
+
 
 
 
