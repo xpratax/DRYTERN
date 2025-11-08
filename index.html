@@ -530,9 +530,57 @@ function comprar(produto, preco) {
     window.open(linkDiscord, "_blank");
 }
 </script>
+<!-- Popup de Política de Privacidade -->
+<div id="popupPrivacidade" style="display:none; position:fixed; bottom:20px; left:20px; right:20px; background:#fff; border:1px solid #ccc; box-shadow:0 2px 10px rgba(0,0,0,0.2); padding:20px; border-radius:10px; z-index:1000; text-align:center;">
+  <p>Usamos cookies e coletamos dados para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+    <a href="#politica" style="color:#007bff; text-decoration:none;">Política de Privacidade</a>.
+  </p>
+  <button onclick="aceitarPolitica()" style="background:#28a745; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">Aceitar</button>
+</div>
+
+<script>
+  function aceitarPolitica() {
+    localStorage.setItem("politicaAceita", "true");
+    document.getElementById("popupPrivacidade").style.display = "none";
+  }
+
+  window.onload = function() {
+    const aceitou = localStorage.getItem("politicaAceita");
+    if (!aceitou) {
+      setTimeout(() => {
+        document.getElementById("popupPrivacidade").style.display = "block";
+      }, 1500);
+    }
+  }
+</script>
+<!--footer-->
+    <!-- Popup de Política de Privacidade -->
+<div id="popupPrivacidade" style="display:none; position:fixed; bottom:20px; left:20px; right:20px; background:#fff; border:1px solid #ccc; box-shadow:0 2px 10px rgba(0,0,0,0.2); padding:20px; border-radius:10px; z-index:1000; text-align:center;">
+  <p>Usamos cookies e coletamos dados para melhorar sua experiência. Ao continuar navegando, você concorda com nossa 
+    <a href="#politica" style="color:#007bff; text-decoration:none;">Política de Privacidade</a>.
+  </p>
+  <button onclick="aceitarPolitica()" style="background:#28a745; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">Aceitar</button>
+</div>
+
+<script>
+  function aceitarPolitica() {
+    localStorage.setItem("politicaAceita", "true");
+    document.getElementById("popupPrivacidade").style.display = "none";
+  }
+
+  window.onload = function() {
+    const aceitou = localStorage.getItem("politicaAceita");
+    if (!aceitou) {
+      setTimeout(() => {
+        document.getElementById("popupPrivacidade").style.display = "block";
+      }, 1500);
+    }
+  }
+</script>
 
 </body>
 </html>
+
 
 
 
