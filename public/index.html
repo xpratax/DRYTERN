@@ -170,80 +170,15 @@
   <a href="politica.html" style="color:white; margin:0 10px; text-decoration:none;">Política de Privacidade</a>
 </nav>
 
-  <!-- META PIX GG - BANNER -->
-<div id="pixgg-meta"<<strong>new update𖤍 <strong>8.0</strong></div></div>
-
-<script>
-    async function carregarMetaPix() {
-        try {
-            const response = await fetch("https://api.pixgg.com/goals/?apikey=15a0da75-dbf3-4e57-8a2d-d3d6f549ed7a&goal=18382");
-            const data = await response.json();
-
-            if (data && data.goal) {
-                const meta = data.goal;
-                const valorAtual = parseFloat(meta.current_value).toFixed(2);
-                const valorMeta = parseFloat(meta.value).toFixed(2);
-                const porcentagem = ((meta.current_value / meta.value) * 100).toFixed(1);
-
-                document.getElementById("pixgg-meta").innerText = 
-                    `Meta: R$ ${ 1} de R$ ${ 40} (${2.5}%)`;
-            } else {
-                document.getElementById("pixgg-meta").innerText = "Erro ao carregar a meta.";
-            }
-        } catch (error) {
-            console.error("Erro ao buscar a meta:", error);
-            document.getElementById("pixgg-meta").innerText ="DRYTERN V8𖤍";
-        }
-    }
-
-    carregarMetaPix();
-</script>
-
-<style>
-    #pixgg-meta {
-        background-color: #ffc107;
-        color: #000;
-        text-align: center;
-        padding: 10px 15px;
-        font-weight: bold;
-        font-family: monospace;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    }
-
-    body {
-        margin-top: 50px; /* espaço para não cobrir o conteúdo */
-    }
-</style>
-<!-- FIM META PIX GG -->
-
     <a href="https://postimg.cc/tYJvhCrJ" target="_blank">
         <img src="https://i.postimg.cc/tYJvhCrJ/images.jpg" alt="Logo da empresa" class="logo">
     </a>
 
-    <div id="ascii-area">
-        <span>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-    ⠄⠄⣴⣶⣤⡤⠦⣤⣀⣤⠆⠄⠄⠄⠄⠄⣈⣭⣭⣿⣶⣿⣦⣼⣆⠄⠄⠄⠄⠄⠄⠄⠄
-⠄⠄⠄⠉⠻⢿⣿⠿⣿⣿⣶⣦⠤⠄⡠⢾⣿⣿⡿⠋⠉⠉⠻⣿⣿⡛⣦⠄⠄⠄⠄⠄⠄
-⠄⠄⠄⠄⠄⠈⠄⠄⠄⠈⢿⣿⣟⠦⠄⣾⣿⣿⣷⠄⠄⠄⠄⠻⠿⢿⣿⣧⣄⠄⠄⠄⠄
-⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⣸⣿⣿⢧⠄⢻⠻⣿⣿⣷⣄⣀⠄⠢⣀⡀⠈⠙⠿⠄⠄⠄⠄
-⠄⠄⢀⠄⠄⠄⠄⠄⠄⢠⣿⣿⣿⠈⠄⠄⠡⠌⣻⣿⣿⣿⣿⣿⣿⣿⣛⣳⣤⣀⣀⠄⠄
-⠄⠄⢠⣧⣶⣥⡤⢄⠄⣸⣿⣿⠘⠄⠄⢀⣴⣿⣿⡿⠛⣿⣿⣧⠈⢿⠿⠟⠛⠻⠿⠄⠄
-⠄⣰⣿⣿⠛⠻⣿⣿⡦⢹⣿⣷⠄⠄⠄⢊⣿⣿⡏⠄⠄⢸⣿⣿⡇⠄⢀⣠⣄⣾⠄⠄⠄
-⣠⣿⠿⠛⠄⢀⣿⣿⣷⠘⢿⣿⣦⡀⠄⢸⢿⣿⣿⣄⠄⣸⣿⣿⡇⣪⣿⡿⠿⣿⣷⡄⠄
-⠙⠃⠄⠄⠄⣼⣿⡟⠌⠄⠈⠻⣿⣿⣦⣌⡇⠻⣿⣿⣷⣿⣿⣿⠐⣿⣿⡇⠄⠛⠻⢷⣄
-⠄⠄⠄⠄⠄⢻⣿⣿⣄⠄⠄⠄⠈⠻⣿⣿⣿⣷⣿⣿⣿⣿⣿⡟⠄⠫⢿⣿⡆⠄⠄⠄⠁
-⠄⠄⠄⠄⠄⠄⠻⣿⣿⣿⣿⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡟⢀⣀⣤⣾⡿⠃⠄⠄⠄⠄
-⠄⠄⠄⠄⢰⣶⠄⠄⣶⠄⢶⣆⢀⣶⠂⣶⡶⠶⣦⡄⢰⣶⠶⢶⣦⠄⠄⣴⣶⠄⠄⠄⠄
-⠄⠄⠄⠄⢸⣿⠶⠶⣿⠄⠈⢻⣿⠁⠄⣿⡇⠄⢸⣿⢸⣿⢶⣾⠏⠄⣸⣟⣹⣧⠄⠄⠄
-⠄⠄⠄⠄⠸⠿⠄⠄⠿⠄⠄⠸⠿⠄⠄⠿⠷⠶⠿⠃⠸⠿⠄⠙⠷⠤⠿⠉⠉⠿⠆⠄⠄
-   <strong>update 8</strong>
-        </span>
-    </div>
+   <div id="ascii-area" style="text-align: center;">
+    <img src="https://i.postimg.cc/HL6mhR8C/xhydra1.png" alt="Imagem Update 10" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <strong>update 8</strong>
+</div>
+
 
     <div class="buttons">
         <button onclick="showSection('bookmarklet-section')">AVA-Educação Profissional</button>
@@ -689,6 +624,7 @@ function comprar(produto, preco) {
 
 </body>
 </html>
+
 
 
 
