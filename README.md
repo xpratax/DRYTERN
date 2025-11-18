@@ -14,7 +14,7 @@
 
 ## 🌐 Acesse nosso site:
 
-[![Acessar Site](https://img.shields.io/badge/Acessar%20Site-Drytern-1dff56?style=for-the-badge&logo=internet-explorer&logoColor=black&labelColor=ffffff)](https://xpratax.github.io/DRYTERN/)
+[![Acessar Site](https://img.shields.io/badge/Acessar%20Site-Drytern-1dff56?style=for-the-badge&logo=internet-explorer&logoColor=black&labelColor=ffffff)](https://drytern.vercel.app)
 
 ---
 
