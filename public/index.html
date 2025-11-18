@@ -622,9 +622,73 @@ function comprar(produto, preco) {
 })();
 </script>
 
+<!-- ===== POPUP DE PERMISSÃO DRYTERN ===== -->
+<style>
+  #permOverlay {
+    position: fixed; inset: 0; display: none;
+    background: #0008; backdrop-filter: blur(3px);
+    align-items: center; justify-content: center;
+    z-index: 999999;
+  }
+  #permOverlay.active { display: flex; }
 
+  #permBox {
+    width: min(380px, 90vw);
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    font-family: Arial;
+    box-shadow: 0 10px 40px #0004;
+    animation: fade .25s ease;
+  }
+  @keyframes fade { from{opacity:0; transform:scale(.9);} to{opacity:1;transform:scale(1);} }
+
+  #permBox h2 { margin: 0 0 10px; font-size: 18px; }
+  #permBox p { color: #444; margin: 0 0 18px; }
+
+  #permBtns { text-align: right; display: flex; gap: 8px; justify-content: flex-end; }
+  #permBtns button {
+    padding: 10px 15px; border-radius: 8px; cursor: pointer; border: 0;
+  }
+  .deny { background: #eee; }
+  .allow { background: #6b46c1; color: #fff; }
+</style>
+
+<div id="permOverlay">
+  <div id="permBox">
+    <h2>Permitir ação?</h2>
+    <p id="permText">Este site deseja redirecionar você ou baixar um arquivo. Deseja permitir?</p>
+
+    <div id="permBtns">
+      <button class="deny" onclick="denyAction()">Negar</button>
+      <button class="allow" onclick="confirmAction()">Permitir</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  let pendingAction = null;
+
+  function openPermission(texto, actionFunction) {
+    document.getElementById("permText").innerText = texto;
+    pendingAction = actionFunction;
+    document.getElementById("permOverlay").classList.add("active");
+  }
+
+  function confirmAction() {
+    document.getElementById("permOverlay").classList.remove("active");
+    if (pendingAction) pendingAction();
+  }
+
+  function denyAction() {
+    document.getElementById("permOverlay").classList.remove("active");
+    alert("Ação cancelada pelo usuário.");
+  }
+</script>
+<!-- ===== FIM POPUP ===== -->
 </body>
 </html>
+
 
 
 
